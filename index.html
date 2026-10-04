@@ -5,13 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LegalHub NG | Nigerian Legal Education & Opportunities</title>
     <link rel="stylesheet" href="css/style.css">
-
-
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <header>
-        <nav>
+        <nav class="nav-container">
             <a href="index.html" class="logo">LegalHub NG</a>
             <ul class="nav-links">
                 <li><a href="#guides">Legal Guides</a></li>
@@ -21,58 +20,65 @@
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Understand Nigerian Law. Access Key Opportunities.</h1>
-        <p>Simplified legal explainers, law student resources, and verified legal career listings across Nigeria.</p>
-        <a href="#opportunities" class="btn-primary">Browse Opportunities</a>
-    </section>
+    <main class="content-container">
 
-    <main class="container">
-        
-        <h2 id="guides">Featured Legal Guides</h2>
-        <div class="grid-3">
-            <article class="card">
-                <span class="card-tag">Property Law</span>
-                <h3>Understanding Tenancy Rights in Nigeria</h3>
-                <p>A practical guide on notice periods, statutory tenant protections, and landlord obligations.</p>
-                <a href="tenancy-rights.html" class="btn-primary">Read Guide</a>
- class="btn-primary">Read Guide</a>
-            </article>
-
-            <article class="card">
-                <span class="card-tag">Corporate Practice</span>
-                <h3>How to Register a Business Name with CAC</h3>
-                <p>Step-by-step procedure for business registration under CAMA 2020.</p>
-                href="cac-registration.html" class="btn-primary">Read Guide</a>
-
-            </article>
-        </div>
-
-        <section class="monetize-box" id="downloads">
-            <h2>Downloadable Legal Resource Pack</h2>
-            <p>Get instant access to structured research checklists and generalized practice guides.</p>
-            <br>
-            <button class="btn-primary" onclick="payWithPaystack('Tenancy Checklist', 1500)">Download Pack (₦1,500)</button>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1>Understand Nigerian Law. Access Key Opportunities.</h1>
+            <p>Simplified legal explainers, law student resources, and verified legal career listings across Nigeria.</p>
+            <a href="#opportunities" class="btn-secondary">Browse Opportunities</a>
         </section>
 
-        <h2 id="opportunities">Latest Opportunities</h2>
-        <div class="grid-3">
-            <div class="card">
-                <span class="card-tag">Internship</span>
-                <h3>Chambers Internship Placement 2026</h3>
-                <p>Commercial litigation chambers accepting applications for graduate legal interns.</p>
-                <a href="#" class="btn-primary">View Details</a>
+        <!-- Featured Guides Section -->
+        <section id="guides" class="section">
+            <h2>Featured Legal Guides</h2>
+            <div class="grid-container">
+
+                <article class="card">
+                    <span class="card-tag">Property Law</span>
+                    <h3>Understanding Tenancy Rights in Nigeria</h3>
+                    <p>A practical guide on notice periods, statutory tenant protections, and landlord obligations.</p>
+                    <a href="tenancy-rights.html" class="btn-primary">Read Guide</a>
+                </article>
+
+                <article class="card">
+                    <span class="card-tag">Corporate Practice</span>
+                    <h3>How to Register a Business Name with CAC</h3>
+                    <p>Step-by-step procedure for business registration under CAMA 2020.</p>
+                    <a href="cac-registration.html" class="btn-primary">Read Guide</a>
+                </article>
+
             </div>
-        </div>
+        </section>
+
+        <!-- Resource Pack Section -->
+        <section id="downloads" class="monetize-box">
+            <h2>Downloadable Legal Resource Pack</h2>
+            <p>Get instant access to structured research checklists and generalized practice guides.</p>
+            <button class="btn-primary" onclick="payWithPaystack()">Download Pack (₦1,500)</button>
+        </section>
+
+        <!-- Latest Opportunities Section -->
+        <section id="opportunities" class="section">
+            <h2>Latest Opportunities</h2>
+            <div class="grid-container">
+
+                <article class="card">
+                    <span class="card-tag">Internship</span>
+                    <h3>Chambers Internship Placement 2026</h3>
+                    <p>Commercial litigation chambers accepting applications for graduate legal interns.</p>
+                    <a href="#" class="btn-secondary">View Details</a>
+                </article>
+
+            </div>
+        </section>
 
     </main>
 
     <footer>
-        <p>© 2026 LegalHub NG. All rights reserved.</p>
-        <p><em>Disclaimer: Content on this platform is for educational and informational purposes only and does not constitute legal advice.</em></p>
+        <p>&copy; 2026 LegalHub NG. All rights reserved.</p>
+        <p class="disclaimer"><em>Disclaimer: Content on this platform is for educational and informational purposes only and does not constitute legal advice.</em></p>
     </footer>
 
-    <script src="https://js.paystack.co/v1/inline.js"></script>
-    <script src="js/script.js"></script>
 </body>
 </html>
